@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled16.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMY/LXe1uTSv6hxZ3TA007y",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ATHUL2003A/ATHUL2003A/blob/main/Guess%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yzCl_dTtiNG6",
+        "outputId": "bd69925e-41b5-4415-9969-4c66182d2019"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Guess8\n",
+            "try next time\n",
+            "Guess6\n",
+            "try next time\n",
+            "Guess5\n",
+            "try next time\n"
+          ]
+        }
+      ],
+      "source": [
+        "secret_number=9\n",
+        "guess_attempt=0\n",
+        "guess_limit=3\n",
+        "while(guess_attempt<guess_limit):\n",
+        "  a=int(input(\"Guess\"))\n",
+        "  if(a==secret_number):\n",
+        "    print(\"you won\")\n",
+        "    break\n",
+        "  if(a != secret_number):\n",
+        "    print(\"try next time\")\n",
+        "    guess_attempt+=1"
+      ]
+    }
+  ]
+}
