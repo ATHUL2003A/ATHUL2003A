@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled19.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMtKffAIkzv6lzRVFgop+Qb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ATHUL2003A/ATHUL2003A/blob/main/Guessing%20a%20number%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uhx81CA4XnBN",
+        "outputId": "01428c20-08ab-43fd-a62a-19952d0aeefe"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "guess: 2\n",
+            "Try once more\n",
+            "guess: 3\n",
+            "Try once more\n",
+            "guess: 4\n",
+            "Try once more\n"
+          ]
+        }
+      ],
+      "source": [
+        "secret_number=9\n",
+        "Guess_attempt=0\n",
+        "Guess_limit=3\n",
+        "while(Guess_attempt<Guess_limit):\n",
+        "  a=int(input(\"guess: \"))\n",
+        "  if(a==secret_number):\n",
+        "    print(\"Congratulations, its the corect number\")\n",
+        "    break\n",
+        "  else:\n",
+        "    print(\"Try once more\")\n",
+        "    Guess_attempt+=1"
+      ]
+    }
+  ]
+}
