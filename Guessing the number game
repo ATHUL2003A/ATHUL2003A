@@ -1,0 +1,11 @@
+secret_number=9
+Guess_attempt=0
+Guess_limit=3
+while(Guess_attempt<Guess_limit):
+  a=int(input("guess: "))
+  if(a==secret_number):
+    print("Congratulations, its the corect number")
+    break
+  else:
+    print("Try once more")
+    Guess_attempt+=1
