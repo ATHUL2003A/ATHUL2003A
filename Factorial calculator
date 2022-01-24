@@ -1,0 +1,8 @@
+import math
+def function1(n):
+  if (n>1):
+    return n*math.factorial(n-1)
+  else:
+    return 1
+a=int(input("enter the number"))
+print(function1(a))
