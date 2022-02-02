@@ -1,0 +1,46 @@
+#define trig_pin 9
+#define echo_pin 8
+float duration;
+float distance;
+void setup()
+{
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  pinMode(2,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(7,OUTPUT);
+  Serial.begin(9650);
+}
+
+void loop()
+{
+  digitalWrite(trig_pin,HIGH);
+  delay(1000);
+  digitalWrite(trig_pin,LOW);
+  duration=pulseIn(echo_pin,HIGH);
+  distance=(duration/2)*(0.034);
+  Serial.println(distance);
+  
+  if (distance<80&&distance>70)
+  {
+    digitalWrite(2,HIGH);
+    delay(1000);
+    digitalWrite(2,LOW);
+    delay(1000);
+  }
+  if (distance<70&&distance>60)
+  {
+    digitalWrite(4,HIGH);
+    delay(1000);
+    digitalWrite(4,LOW);
+    delay(1000);
+  }
+  if (distance<60)
+  {
+    digitalWrite(7,HIGH);
+    delay(1000);
+    digitalWrite(7,LOW);
+    delay(1000);
+  }
+}
+  
