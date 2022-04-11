@@ -7,7 +7,6 @@ def quizgame(question,answer):
       score=score+1
       break;
     else:
-      if(attempt<2):
         question=input("sorry, try again ")
         attempt=attempt+1
 
@@ -15,7 +14,7 @@ def quizgame(question,answer):
     print("The correct answer is", answer)
 score=0
 print("Start palying the quiz")
-guess1=input("Who is the national father of india? ")
+guess1=input("Who is the father of nation? ")
 quizgame(guess1,"Mahathma gandhi")
 guess2=input("Which is the national animal? ")
 quizgame(guess2,"Tiger")
