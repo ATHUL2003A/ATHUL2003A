@@ -1,0 +1,24 @@
+def quizgame(question,answer):
+  global score
+  attempt=0
+  while attempt<3:
+    if(question.lower()==answer.lower()):
+      print("Correct answer,congratulations")
+      score=score+1
+      break;
+    else:
+      if(attempt<2):
+        question=input("sorry, try again ")
+        attempt=attempt+1
+
+  if(attempt==3):
+    print("The correct answer is", answer)
+score=0
+print("Start palying the quiz")
+guess1=input("Who is the national father of india? ")
+quizgame(guess1,"Mahathma gandhi")
+guess2=input("Which is the national animal? ")
+quizgame(guess2,"Tiger")
+guess3=input("Which is the national flower? ")
+quizgame(guess3,"Lotus")
+print("Your score is " +str(score))
