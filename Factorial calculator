@@ -1,10 +1,10 @@
 import math
 def function1(n):
+n=int(input("Enter the number: "))
   if (n>1):
     return n*math.factorial(n-1)
   elif (n==1):
     return 1
   else:
     print("Invalid input")
-a=int(input("enter the number"))
 print(function1(a))
