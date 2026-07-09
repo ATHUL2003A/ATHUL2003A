@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @ATHUL2003A
-- 👀 I’m interested in coding,doing projects
-- 🌱 I’m currently learning C++,PYTHION
+- 👀 I’m interested in RTL Design,Computer Architecture,Digital Design
+- 🌱 I’m currently learning Dig IC Design,Verilog,C
 - 💞️ I’m looking to collaborate on PROJECTS
 - 📫 How to reach me athulkrishnaab2003@gmail.com
 
